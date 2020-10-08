@@ -10,7 +10,7 @@ public class BackendController {
     @Value("${app.profile}")
     private String profile;
 
-    @GetMapping(value = "/backend")
+    @GetMapping(value = "/")
     public Result getResult(){
         Result result = Result.builder().message("Hello").profile(profile).build();
         return result;
