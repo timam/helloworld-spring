@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class FrontendController {
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String sayHello(){
         return "Hello from frontend";
     }
