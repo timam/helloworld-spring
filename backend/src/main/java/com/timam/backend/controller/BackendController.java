@@ -1,12 +1,12 @@
-package com.timam.backend.controller;
+package com.timam.backend.response;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-public class BackendController {
-    @GetMapping("/hello")
-    public String sayHello(){
-        return "Hello from backend";
-    }
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class Result {
+    private String message;
+    private String profile;
 }
